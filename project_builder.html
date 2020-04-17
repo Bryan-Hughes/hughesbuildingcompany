@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html class="index-html" lang="en">
+  <head>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Playfair+Display|Raleway:100&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" type="image/png" href="imgs/hughes-building-company-favicon.png" />
+    <script src="script.js"></script>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>HBC Project Builder</title>
+  </head>
+  <body>
+    <div class="index-header">
+      <!--WEBSITE HEADER-->
+      <h1 class="header">
+        HUGHES BUILDING COMPANY
+        <img class="logo" src="imgs/HUGHES_BUILDING_COMPANY_LOGO.PNG" alt="Company Logo" />
+      </h1>
+      <!--NAVIGATION BAR-->
+      <nav class="navigation">
+        <ul class="navigation-ul">
+          <!--HOME TAB-->
+          <li class="navigation-li">
+            <a class="navigation-anchor" href="index.html">HOME</a>
+          </li>
+          <!--PROJECT BUILDER TAB-->
+          <li class="navigation-li">
+            <a class="navigation-anchor" href="project_builder.html">PROJECT BUILDER</a>
+          </li>
+          <!--CONTACT TAB-->
+          <li class="navigation-li">
+            <a class="navigation-anchor" href="contact.html">CONTACT</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <!--PROJECT BUILDER CONTAINER-->
+    <div class="main-body-container">
+      <!--EMPTY SPACE LEFT SIDE-->
+      <div class="empty-left"></div>
+      <!--FORM CONTAINER-->
+      <div class="entire-form">
+        <div id="error-message"></div>
+
+        <!--PROJECT FORM-->
+        <form
+          class="project-form"
+          id="project-form"
+          action="https://httpbin.org/post"
+          method="post"
+        >
+          <div class="form-header">
+            <!--FORM HEADER-->
+            <h1 class="form-header">BUILD YOUR PROJECT</h1>
+          </div>
+          <!--PICK ROOM-->
+          <label class="form-labels">TYPE OF ROOM</label>
+          <select name="room-type" class="dropdown" id="room-dropdown" required>
+            <option value="Kitchen">Kitchen</option>
+            <option value="Bathroom">Bathroom</option>
+            <option value="Basement">Basement</option>
+            <option value="Room">Room</option>
+            <option value="Hallway">Hallway</option>
+            <option value="Stairway">Stairway</option>
+            <option value="Odd-Job">Odd Job</option>
+          </select>
+          <!--DEMO-->
+          <label class="form-labels">DEMOLITION</label>
+          <select id="demo" name="demolition" class="dropdown" id="demolition-dropdown" required>
+            <option value="1">Yes</option>
+            <option value="2">No</option>
+            <option value="3">Partial</option>
+          </select>
+          <!--WALLS-->
+          <label class="form-labels">NEW WALLS</label>
+          <select name="new-walls" class="dropdown" id="new-walls" required>
+            <option value="0">0</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="4">Several</option>
+          </select>
+          <!--DRYWALL-->
+          <label class="form-labels">DRYWALL/FIBRE BOARD</label>
+          <select name="drywall" class="dropdown" id="drywall-dropdown" required>
+            <option value="1">Install Drywall</option>
+            <option value="2">Repair Drywall</option>
+            <option value="3">Install Wet-Wall</option>
+            <option value="4">Install Fibre-glass Board</option>
+          </select>
+          <!--SUBFLOOR-->
+          <label class="form-labels">SUBFLOOR REINFORCEMENT</label>
+          <select name="subfloor" class="dropdown" id="subfloor-dropdown" required>
+            <option value="0">None</option>
+            <option value="1">New Floor Screws</option>
+            <option value="2">Plywood Patch</option>
+            <option value="3">Joist Reinforcement</option>
+            <option value="4">Joist Installation</option>
+          </select>
+          <!--FLOORING-->
+          <label class="form-labels">FLOORING INSTALLATION</label>
+          <select name="flooring" class="dropdown" id="flooring-dropdown" required>
+            <option value="0">None</option>
+            <option value="1">Genuine Hardwood</option>
+            <option value="2">Engineered Hardwood</option>
+            <option value="3">Laminate/Vinyl</option>
+            <option value="4">Tile</option>
+          </select>
+          <!--TRIM-->
+          <label class="form-labels">Trim</label>
+          <select name="standard-trim" class="dropdown" id="standard-trim-dropdown" required>
+            <option value="0">None</option>
+            <option value="1">Baseboard & Window/Door Casing</option>
+            <option value="3">Crown-Molding</option>
+            <option value="4">Chair-Rail</option>
+            <option value="5">Feature Wall</option>
+          </select>
+          <label class="form-labels">Trim</label>
+          <select name="deluxe-trim" class="dropdown" id="deluxe-trim-dropdown" required>
+            <option value="0">None</option>
+            <option value="1">Baseboard & Window/Door Casing</option>
+            <option value="3">Crown-Molding</option>
+            <option value="4">Chair-Rail</option>
+            <option value="5">Feature Wall</option>
+          </select>
+          <!--WINDOWS-->
+          <label class="form-labels">Window Installation</label>
+          <select name="window" class="dropdown" id="window-dropdown" required>
+            <option value="0">None</option>
+            <option value="1">Remove/Replace Windows</option>
+            <option value="2">Add Window(s)</option>
+          </select>
+          <!--DOORS-->
+          <label class="form-labels">Door Installation</label>
+          <select name="door" class="dropdown" id="door-dropdown" required>
+            <option value="0">None</option>
+            <option value="1">Repaint Doors</option>
+            <option value="2">Remove/Replace Door(s)</option>
+            <option value="3">Add New Door(s)</option>
+          </select>
+          <!--PAINT-->
+          <label class="form-labels">Paint</label>
+          <select name="paint" class="dropdown" id="paint-dropdown" required>
+            <option value="0">None</option>
+            <option value="1">Prime/Paint</option>
+          </select>
+          <!--APPLIANCE-->
+          <label class="form-labels">Appliance Installation</label>
+          <select name="appliance" class="dropdown" id="appliance-dropdown" required>
+            <option value="0">None</option>
+            <option value="1">Install New Appliances</option>
+          </select>
+          <div class="upload-container">
+            <!--UPLOAD IMAGES-->
+            <label class="input-label">Upload Images</label>
+            <input
+              type="file"
+              id="room-photo"
+              name="room-photo"
+              accept="image/png, image/jpeg"
+              multiple
+            />
+          </div>
+          <!--SUBMIT BUTTON-->
+          <button
+            for="project-form"
+            type="submit"
+            class="project-submit-button"
+            id="submit-project-button"
+          >
+            SUBMIT
+          </button>
+        </form>
+      </div>
+      <!--EMPTY SPACE RIGHT SIDE-->
+      <div class="empty-right"></div>
+    </div>
+    <!--FOOTER-->
+    <div class="footer">
+      <footer>
+        <p class="footer-copyright">
+          BRYAN NORMAN HUGHES &copy;
+        </p>
+      </footer>
+    </div>
+  </body>
+</html>
+<!--THE END-->
+<!--
+      Part 1: Main Store Page
+
+      Requirements:
+
+      1. Header across the top must include your store's name, a logo,
+      and use a different background colour, web font, etc.  You must also include
+      a link to your contact.html page.  Your header should include info about
+      what the store is, what it sells, etc.  Use some images to try and draw
+      the user in.  NOTE: place all your site's images in the `src/images/` directory.
+
+      2. Below the header, a multi-column layout of items you can purchase in the
+      store.  You must have at least 10 items in your store, and at least 2
+      categories of items. For example, if you are selling clothing, you might
+      have categories for Men, Women, and Children, and each category would have
+      its own set of items.  Each item should include:
+      
+        - a picture
+        - the item's name/title
+        - a more complete description of the item
+        - a category (i.e., each item must belong to a category)
+        - a price.
+      
+      Each item should be its own "card" (i.e., some kind of box around each item
+      separating one from the next, with suitable whitespace between).
+
+      3. A sidebar (left or right, depending on your design) of the item layout
+      section, showing the different categories of items in your store.  If a
+      user clicks on one of the categories, use CSS and JavaScript to hide all
+      other items in the store (i.e., only show items for the chosen category).
+      Make sure you include a way to return to seeing all categories, and make it
+      obvious to the user that they are only seeing a partial list of items when
+      you filter by category (i.e., use CSS and HTML to change things somehow).
+
+      4. Below the items, a footer with the name of the store, any relevant links you
+      need to give users, as well as a small HTML form for entering an Email
+      address and clicking a "Subscribe" button to subscribe to the store's
+      newsletter. Use https://formspree.io/ to automatically submit the form to
+      your email address (i.e., when a user fills out their email address and
+      clicks submit, *you* should get that information sent to your email
+      address via formspree.io).  Make sure you setup your account on
+      https://formspree.io/.
+
+      5. Use two different Web Fonts for your store.  The titles should be different
+      from any regular text.  Use a free font service like https://fonts.google.com/
+      or any other that you choose.  You can also experiment with different font
+      sizes and colours to draw attention toward or away from various parts of
+      your design.
+
+      6. Pick a colour theme using a tool like https://colorhunt.co/ with at least
+      3 colours (primary, secondary, accent), and use them throughout your site
+      for backgrounds, borders, fonts. Your store page needs to look attractive
+      and marks will be given for good a good looking site.  No one will buy from
+      a store that looks like its owners aren't professional or don't care about
+      details.  Also make sure that the colour contrast in your site is suitable
+      for everyone to read.
+
+      7. Use modern CSS to help you achieve your layout.  For example, Flexbox
+      and CSS Grid can help you create professional looking layouts.  Here
+      are some guides to get you started:
+
+       - https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox
+       - https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Basic_Concepts_of_Grid_Layout
+       
+      You are also welcome to use existing CSS libraries to help you with your layout,
+      but you must also include your own styles (i.e., you can't use a library
+      for everything in your design).
+
+      8. Make sure you don't use copyrighted materials from other sites.  If you use
+      icons, fonts, images, etc., make sure you are legally permitted to reuse them,
+      and include references to indicate where you got them. Some resources to consider:
+
+        - https://unsplash.com/ for images
+        - https://fontawesome.com/ for icons
+        - https://gallery.manypixels.co/ or https://undraw.co/illustrations for illustrations (SVG)
+
+      9. Make sure you reduce the download size of images you include in your
+      store.  Users don't want to download 10s or 100s of megabytes of data, especially
+      on mobile.  You can use an online tool like https://squoosh.app/ to help you
+      reduce images.  You will lose marks if your images aren't optimized for the web.
+       
+
+      10. Make sure you have no JavaScript or other errors in your Dev Tools Console.
+      Run your site, and test all aspects of it with the Console open, and fix
+      any issues you encounter.
+
+      11. Make sure your forms all work as they should, testing them yourself,
+      and also have someone else test it for you.  The easiest way to find bugs
+      in software is to let someone who didn't build it try to use it!
+      
+    -->

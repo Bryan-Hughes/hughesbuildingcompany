@@ -1,0 +1,673 @@
+/*                                     */
+/*    STYLES THAT APPLY TO ALL PAGES   */
+/*                                     */
+
+/* INCLUSION OF GOOGLE FONTS */
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display|Raleway:100&display=swap');
+
+/*PADDING/BORDER INCLUDED IN WIDTH/HEIGHT */
+* {
+  box-sizing: border-box;
+}
+
+/*STYLES FOR THE HTML AND BODY ELEMENTS*/
+html,
+body {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  display: flex;
+  flex-flow: column;
+  background-color: #fff;
+}
+
+/*CONTAINER FOR HEADER AND NAVIGATION*/
+div.index-header {
+  font-family: 'Raleway', sans-serif;
+  width: 100%;
+  height: 20vh;
+  flex: 2;
+}
+
+/*HUGHES BUILDING COMPANY LOGO*/
+img.logo {
+  height: 1em;
+  width: 1em;
+  max-height: fit-content;
+  max-width: fit-content;
+}
+
+/*HUGHES BUILDING COMPANY HEADER*/
+h1.header {
+  font-family: 'Playfair Display', serif;
+  text-align: center;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 3em;
+}
+
+/*NAVIGATION UL STYLING*/
+ul.navigation-ul {
+  text-align: center;
+  list-style-type: none;
+  overflow: auto;
+  background-color: #000;
+  width: 100%;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: auto;
+  padding-right: auto;
+  display: flex;
+}
+
+/*NAVIGATION LI STYLING*/
+li.navigation-li {
+  float: left;
+  border-right: 1px solid #222;
+  flex: 1;
+}
+
+/*NAVIGATION ANCHOR STYLING*/
+a.navigation-anchor {
+  display: block;
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 2em 2em;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  margin-left: auto;
+  margin-right: auto;
+  letter-spacing: 0.5em;
+  text-align: center;
+}
+
+/*NAVIGATION ANCHOR:HOVER STYLING*/
+a.navigation-anchor:hover {
+  display: block;
+  font-weight: bold;
+}
+
+/*LEFT EMPTY CONTAINER IN THE BODY*/
+div.empty-left {
+  flex: 1;
+  height: 60vh;
+  width: auto;
+  padding: auto;
+  margin: auto;
+  background-color: #222;
+}
+
+/*RIGHT EMPTY CONTAINER IN THE BODY*/
+div.empty-right {
+  flex: 1;
+  flex-flow: column;
+  height: 60vh;
+  width: auto;
+  padding: auto;
+  margin: auto;
+  background-color: #222;
+}
+
+/*NO MORE SCROLL-BAR*/
+html::-webkit-scrollbar {
+  width: 0;
+}
+
+/*STYLES FOR LINKS*/
+a.links {
+  text-decoration: underline;
+  text-decoration-style: dotted;
+}
+a.links:visited {
+  color: white;
+}
+a.links:hover {
+  color: red;
+}
+a.links:after {
+  color: white;
+}
+
+/*FOOTER CONTAINER STYLES*/
+.footer {
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.3em;
+  font-weight: bold;
+  color: #666;
+  background-color: #000;
+  display: flex;
+  height: 10vh;
+  justify-items: center;
+}
+
+/*FOOTER STYLES*/
+footer {
+  display: flex;
+  flex-flow: row;
+  height: 100%;
+  width: 100%;
+  min-width: 100%;
+  align-items: center;
+  margin: auto;
+}
+
+.footer-copyright {
+  margin-left: auto;
+  margin-right: auto;
+  padding: auto;
+}
+
+/*                                     */
+/*STYLES FOR THE HOME PAGE (INDEX.HTML)*/
+/*                                     */
+
+/*HOME'S BODY CONTAINER*/
+.main-body-container {
+  display: flex;
+  height: 80vh;
+  width: 100%;
+  overflow: auto;
+  background-color: #222;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*WEBSITE INTRODUCTION CONTAINER*/
+.intro {
+  font-family: 'Raleway', sans-serif;
+  color: #fff;
+  flex: 5;
+  height: 100%;
+  background-color: #333;
+  overflow: auto;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/*INTRO CONTAINER SCROLL-BAR STYLING*/
+.intro::-webkit-scrollbar {
+  width: 1px;
+}
+.intro::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px #fff;
+  border-radius: 10px;
+}
+.intro::-webkit-scrollbar-thumb {
+  background: #333;
+  border-radius: 10px;
+}
+
+/*HEADERS FOR THE BODY OF HOME PAGE*/
+.welcome-about {
+  font-family: 'Raleway', sans-serif;
+  font-size: 2.5em;
+  font-weight: bold;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1em;
+  margin-bottom: 0.5em;
+  padding-left: auto;
+  padding-right: auto;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  width: auto;
+  text-align: center;
+}
+
+/*INSTRUCTIONS PARAGRAPH STYLING*/
+.instructions {
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+  margin-bottom: 1em;
+  padding-left: 1em;
+  padding-right: 1em;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  overflow: hidden;
+  letter-spacing: 0.2em;
+  text-align: center;
+  color: #fff;
+}
+
+/*ABOUT-ME PARAGRAPH STYLING*/
+.about-me {
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  padding-left: 1em;
+  padding-right: 1em;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  overflow: hidden;
+  letter-spacing: 0.15em;
+  text-align: center;
+}
+
+/*                                     */
+/*   STYLES FOR PROJECT BUILDER TAB    */
+/*                                     */
+
+/*PROJECT BUILDER CONTAINER*/
+
+/*STYLES THAT APPLY TO THE ENTIRE FORM*/
+div.entire-form {
+  display: flex;
+  flex: 5;
+  overflow: auto;
+  height: 100%;
+  width: 100%;
+  align-content: center;
+  background-color: #333;
+}
+
+/*PROJECT BUILDER FORM STYLES*/
+form.project-form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  width: 76%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: auto;
+  text-align: center;
+  overflow-x: hidden;
+}
+
+/*PROJECT FORM SCROLL BAR REMOVAL*/
+.project-form::-webkit-scrollbar {
+  display: none;
+}
+
+/*BUILD-YOUR-PROJECT HEADER*/
+.form-header {
+  display: flex;
+  flex-direction: column;
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.7em;
+  font-weight: bold;
+  color: #fff;
+  padding: 0.5em auto auto 0.5em;
+  position: static;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0.5em;
+  margin-bottom: 1em;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+/*LABEL STYLES*/
+.form-labels {
+  display: flex;
+  flex-flow: column nowrap;
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #fff;
+  width: auto;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 0;
+  padding-bottom: 0.5em;
+  text-align: left;
+}
+
+/*CONTAINER FOR UPLOAD INPUT AND IT'S LABEL*/
+.upload-container {
+  display: flex;
+  flex-flow: column;
+  border: solid 1px #fff;
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2em;
+  padding-top: 1em;
+  justify-content: center;
+}
+
+/*STYLES FOR PHOTO UPLOAD LABEL*/
+.input-label {
+  display: flex;
+  flex-flow: column nowrap;
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.3em;
+  font-weight: bold;
+  color: #fff;
+  width: auto;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0.5em 2em;
+  text-align: center;
+  text-decoration: underline;
+}
+
+/*DROP DOWN STYLES*/
+.dropdown {
+  display: flex;
+  flex-flow: column nowrap;
+  font-family: 'Raleway', sans-serif;
+  font-size: 2em;
+  font-weight: bold;
+  width: 100%;
+  background-color: #fff;
+  border: solid;
+  border-color: #444;
+  border-radius: 5px;
+  color: #000;
+  padding: 0.5em;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1.5em;
+  margin-top: 0.2em;
+}
+.dropdown:focus,
+.dropdown:hover,
+.dropdown:active {
+  outline: solid 1px #fff;
+}
+
+/*STYLES FOR DROPDOWN*/
+option {
+  display: flex;
+  flex-flow: column nowrap;
+  font-family: 'Raleway', sans-serif;
+  font-size: 1em;
+  font-weight: bold;
+  color: #000;
+  background-color: #fff;
+}
+
+/*STYLES FOR SUBMIT BUTTON*/
+.project-submit-button {
+  font-family: 'Raleway', sans-serif;
+  font-size: 2em;
+  font-weight: bold;
+  background-color: #222;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  width: 50%;
+  padding: 1em 1em;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  -webkit-transition: all 0.4s ease-in-out;
+}
+.project-submit-button:hover {
+  font-size: 2em;
+  font-weight: bolder;
+  width: 75%;
+  transition: all 0.4s ease-in-out 0.2s;
+  transform: scale(1);
+  color: red;
+}
+
+/*UPLOAD IMAGE STYLES*/
+#room-photo {
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.2em;
+  color: #fff;
+  background-color: #333;
+
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+/*                                     */
+/*       CONTACT INFORMATION FORM      */
+/*                                     */
+
+/*CONTAINER FOR THE ENTIRE BODY (CONTACT)*/
+.main-body-container-contact {
+  display: grid;
+  grid-template-columns: 15% 70% 15%;
+  height: 80vh;
+  width: 100%;
+  overflow: hidden;
+  background-color: #222;
+}
+
+/*CONTAINER FOR CONTACT FORM*/
+.contact-form-container {
+  display: grid;
+  grid-template-rows: 20% 80%;
+  height: 100%;
+  background-color: #333;
+  overflow: hidden;
+  padding-bottom: 2em;
+}
+
+.input-field {
+  margin-top: 3em;
+  margin-left: 2em;
+  margin-right: 2em;
+  margin-bottom: 2em;
+}
+
+/*CONTACT INFO FORM HEADER*/
+h2.contact-form-header {
+  font-family: 'Raleway', sans-serif;
+  font-size: 2.5em;
+  font-weight: bold;
+  color: #fff;
+  padding-left: auto;
+  padding-right: auto;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  margin-bottom: 0.5em;
+  overflow: hidden;
+  position: sticky;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+/*STYLES FOR CONTACT INFO FORM*/
+form.contact-information-form {
+  display: flex;
+  flex-flow: column;
+  grid-template-rows: auto;
+  height: 100%;
+  width: 100%;
+  font-family: 'Raleway', sans-serif;
+  font-weight: bold;
+  font-size: 1.7em;
+  color: #fff;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+  margin-bottom: 1em;
+  padding-left: auto;
+  padding-right: auto;
+  overflow: scroll;
+  position: sticky;
+}
+
+.preference {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0.5em;
+  margin-top: 0.5em;
+  padding-left: auto;
+  padding-right: auto;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+}
+
+.contact-label {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  padding-left: auto;
+  padding-right: auto;
+  padding-top: 0.5em;
+  padding-bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*REMOVE SCROLL BAR IN FORM*/
+.contact-information-form::-webkit-scrollbar {
+  display: none;
+}
+
+/*FORM INPUT STYLES*/
+input {
+  font-family: 'Raleway', sans-serif;
+  font-weight: bold;
+  font-size: 1em;
+  border: solid 1px #444;
+  border-radius: 5px;
+  background-color: #fff;
+  color: #000;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  padding-left: auto;
+  padding-right: auto;
+}
+
+input::placeholder {
+  color: rgba(128, 128, 128, 0.603);
+  padding-left: 0.5em;
+}
+
+input:scope {
+  padding: 1em;
+}
+
+/*CUSTOM LABEL*/
+.checkbox-container {
+  position: relative;
+
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 30px;
+  padding-right: auto;
+  justify-items: center;
+}
+
+/* HIDE DEFAULT CHECKBOX */
+.checkbox-container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* CUSTOM CHECKBOX */
+.checkbox {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: auto;
+  padding-right: auto;
+}
+
+/* CHANGE BACKGROUND COLOR OF CHECKBOX ON HOVER */
+.checkbox-container:hover input ~ .checkbox {
+  background-color: #bbb;
+}
+
+/* WHEN CHECKED, CHANGE SHADES */
+.checkbox-container input:checked ~ .checkbox {
+  background-color: #ccc;
+}
+
+/*CREATE CHECKMARK AFTER CLICK*/
+.checkbox:after {
+  content: '';
+  position: absolute;
+  display: block;
+}
+
+/*SHOW THE CHECKMARK WHEN CHECKED*/
+.checkbox-container input:checked ~ .checkbox:after {
+  display: none;
+}
+
+/*STYLES FOR THE CHECKMARK INDICATOR*/
+.checkbox-container .checkbox:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid #000;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.contact-submit-button {
+  font-family: 'Raleway', sans-serif;
+  font-size: 1em;
+  font-weight: bold;
+  background-color: #222;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  width: 30%;
+  padding: 0.2em 0.2em;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0.2em;
+  margin-bottom: 0.2em;
+  -webkit-transition: all 0.4s ease-in-out;
+  cursor: pointer;
+}
+.contact-submit-button:hover {
+  font-size: 1em;
+  font-weight: bolder;
+  width: 30%;
+  transition: all 0.4s ease-in-out 0.2s;
+  transform: scale(1);
+  color: red;
+}
+
+input:focus,
+input:active,
+textarea:focus {
+  outline: 3px solid red;
+  border-radius: 5px;
+  background-color: #fff;
+}
+
+/* font-family: 'Noto Sans', sans-serif;
+  font-family: 'Oxygen Mono', monospace; 
+*/
