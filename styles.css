@@ -52,6 +52,12 @@ h1.header {
   max-width: 100%;
 }
 
+nav {
+  width: 100%;
+  max-width: 100%;
+  font-size: 1vw;
+}
+
 /*NAVIGATION UL STYLING*/
 ul.navigation-ul {
   font-size: 1vw;
@@ -470,11 +476,12 @@ option {
   display: grid;
   grid-template-rows: 20% 80%;
   height: 100%;
+  max-height: 100%;
   width: 100%;
   max-width: 100%;
   background-color: #333;
   overflow: hidden;
-  padding-bottom: 2em;
+  padding-bottom: auto;
 }
 
 .input-field {
@@ -500,7 +507,7 @@ h2.contact-form-header {
   margin-left: auto;
   margin-right: auto;
   overflow: hidden;
-  position: sticky;
+  position: relative;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -525,7 +532,7 @@ form.contact-information-form {
   padding-left: auto;
   padding-right: auto;
   overflow: scroll;
-  position: sticky;
+  position: relative;
 }
 
 .preference {
